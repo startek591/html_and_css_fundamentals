@@ -23,3 +23,12 @@ p {
   margin-top: 45px;
   margin-bottom: 0;
 }
+
+.strong {
+  background: yellow;
+  color: black;
+}
+
+.accent-color {
+  color: yellow;
+}
