@@ -33,19 +33,14 @@ p {
   color: #ffe600;
 }
 
-a:link,
-a:visited {
+a {
   color: #ffe600;
 }
 
-a:focus {
-  color: aquamarine;
-}
-
-a:hover {
-  color: firebrick;
-}
-
-a:active {
-  color: plum;
+.button {
+  background-color: #ffe600;
+  padding: 20px;
+  color: black;
+  display: inline-block;
+  margin-right: 25px;
 }
