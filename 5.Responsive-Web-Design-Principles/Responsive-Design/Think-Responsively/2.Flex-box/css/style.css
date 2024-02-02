@@ -4,20 +4,6 @@ body {
   margin: 0;
 }
 
-/* from a minimum width of 650px and bigger */
-@media (min-width: 650px) {
-  body {
-    background: orange;
-  }
-}
-
-/* from a minimum width of 400px and bigger */
-@media (min-width: 400px) and (max-width: 649px) {
-  body {
-    background: purple;
-  }
-}
-
 /* Typography */
 h1 {
   font-size: 3rem;
@@ -67,4 +53,16 @@ img {
   background: #212614;
   color: #fff;
   padding: 1em;
+}
+
+/* Order matters you have to put it after the default settings */
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
 }
