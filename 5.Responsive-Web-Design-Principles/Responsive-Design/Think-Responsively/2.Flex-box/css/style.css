@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-top: 0;
+}
+
 h1 span {
   color: #b7832f;
 }
@@ -28,4 +32,11 @@ img {
 
 .columns {
   display: flex;
+  margin: 1em 0;
+}
+
+.col-bg {
+  background: #212614;
+  color: #fff;
+  padding: 1em;
 }
