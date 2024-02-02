@@ -4,6 +4,20 @@ body {
   margin: 0;
 }
 
+/* from a minimum width of 650px and bigger */
+@media (min-width: 650px) {
+  body {
+    background: orange;
+  }
+}
+
+/* from a minimum width of 400px and bigger */
+@media (min-width: 400px) and (max-width: 649px) {
+  body {
+    background: purple;
+  }
+}
+
 /* Typography */
 h1 {
   font-size: 3rem;
