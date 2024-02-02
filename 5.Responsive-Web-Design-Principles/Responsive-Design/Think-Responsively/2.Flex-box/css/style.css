@@ -59,6 +59,8 @@ img {
 @media (max-width: 600px) {
   .columns {
     flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
   }
   .col-1,
   .col-2,
