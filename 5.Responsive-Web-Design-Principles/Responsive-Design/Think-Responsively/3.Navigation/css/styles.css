@@ -26,17 +26,27 @@ h1 {
 .container {
   width: 90%;
   max-width: 900px;
-  border: 1px solid magenta;
   margin: 0 auto;
 }
 
 .container-nav {
   display: flex;
+  justify-content: space-between;
 }
 
 header {
   background: #f8f8f8;
   padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
 }
 
 /* navigation */
@@ -70,4 +80,14 @@ nav a:focus {
 
 .current-page:hover {
   color: #707070;
+}
+
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
 }
