@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Layout */
 .container {
   width: 90%;
   max-width: 900px;
@@ -9,14 +17,40 @@
   justify-content: space-between;
 }
 
-h1 {
+/* Typography */
+
+h1,
+h2,
+h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: #143774;
+}
+
+h1 {
   font-size: 2rem;
   margin: 0;
 }
 
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+}
+
+/* h1 subtitle */
 .subtitle {
   font-weight: 700;
   color: #1792d2;
@@ -26,10 +60,33 @@ h1 {
   text-transform: uppercase;
 }
 
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
 header {
   background: #f8f8f8;
   padding: 2em 0;
 }
+
+/* navigation */
 
 nav ul {
   list-style: none;
