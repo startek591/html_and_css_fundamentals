@@ -1,3 +1,9 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
@@ -10,20 +16,9 @@ img {
   display: block;
 }
 
-/* Layout */
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.container-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Typography */
+/* =================
+Typography
+================= */
 
 h1,
 h2,
@@ -31,6 +26,7 @@ h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: #143774;
+  margin-top: 0;
 }
 
 h1 {
@@ -51,19 +47,12 @@ strong {
   font-weight: 700;
 }
 
-h2 {
-  font-family: "Lora", serif;
-  font-size: 1.5rem;
-}
-
 /* h1 subtitle */
 .subtitle {
   font-weight: 700;
   color: #1792d2;
   font-size: 0.75rem;
   margin: 0;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .article-title {
@@ -91,10 +80,41 @@ h2 {
   margin: 2em 0;
 }
 
+/* =================
+Layout
+================= */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   background: #f8f8f8;
   padding: 2em 0;
   text-align: center;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
+  }
 }
 
 /* navigation */
@@ -131,14 +151,6 @@ nav a:focus {
 }
 
 @media (max-width: 675px) {
-  .container-flex {
-    flex-direction: column;
-  }
-
-  header {
-    text-align: center;
-  }
-
   nav ul {
     flex-direction: column;
   }
@@ -146,26 +158,12 @@ nav a:focus {
   nav li {
     margin: 0.5em 0;
   }
-
-  main {
-    width: 75%;
-  }
-
-  aside {
-    width: 20%;
-  }
 }
 
-main {
-  width: 75%;
-}
-
-aside {
-  width: 20%;
-}
+/* articles */
 
 .article-featured {
-  border-bottom: 1px solid #707070;
+  border-bottom: #707070 1px solid;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
@@ -184,12 +182,30 @@ aside {
   order: 1;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .article-recent-main {
-    margin-top: -2.5em;
+    width: 68%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
   }
 
   .article-info {
-    text-align: right;
+    order: -1;
   }
 }
