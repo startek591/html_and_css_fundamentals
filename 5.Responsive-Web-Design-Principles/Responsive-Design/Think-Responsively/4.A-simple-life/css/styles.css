@@ -197,8 +197,19 @@ nav a:focus {
   }
 
   .article-image {
-    width: 100%;
+    order: -2;
     min-height: 250px;
     object-fit: cover;
   }
+
+  .article-info {
+    order: -1;
+  }
+}
+
+/* widgets */
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
 }
