@@ -68,3 +68,11 @@ strong {
 .main-content {
   padding: 2em 1em;
 }
+
+/* media queries */
+
+@media (min-width: 500px) {
+  body {
+    background: purple;
+  }
+}
