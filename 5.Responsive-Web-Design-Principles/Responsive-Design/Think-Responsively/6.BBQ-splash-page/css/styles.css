@@ -125,6 +125,12 @@ input {
 .btn-primary {
   background: linear-gradient(to left, #ff713b, #ffa51d);
   color: white;
+  transition: color 1s; /* Transition on hover and leaving hover */
+}
+
+.btn-primary:hover {
+  color: black;
+  /* If transition is place here - it will transition only on hover */
 }
 
 /* media queries */
