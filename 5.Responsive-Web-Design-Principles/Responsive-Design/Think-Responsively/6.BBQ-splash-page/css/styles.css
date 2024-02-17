@@ -50,11 +50,15 @@ strong {
 
 .top-text {
   font-size: 0.625rem;
+  margin: 0;
+  padding-top: 2px;
   font-weight: 900;
   color: #f18119;
   text-transform: uppercase;
   letter-spacing: 1px;
   order: -1;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
