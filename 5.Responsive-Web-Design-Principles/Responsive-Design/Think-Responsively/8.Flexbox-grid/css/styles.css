@@ -10,10 +10,16 @@
   border: 2px solid purple;
   align-items: center;
   justify-content: center;
+}
 
-  grid-column-start: 1;
-  grid-column-end: 4;
+.one {
+  background: #b823c1;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4; /* start/ end  */
+}
 
-  grid-row-start: 2;
-  grid-row-end: 4;
+.two {
+  background: #ff5670;
+  grid-column: 2 / 4; /* start / end */
+  grid-row: 2/ 3;
 }
